@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './shared/stor/counter.reducers';
+import { CounterbuttonComponent } from './components/counterbutton/counterbutton.component';
+import { CounterdispalyComponent } from './components/counterdispaly/counterdispaly.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CounterbuttonComponent,
+    CounterdispalyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({counter:counterReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
