@@ -1,1 +1,9 @@
 <p>customcounter works!</p>
+<input type="text" name="currentstate" [(ngModel)]="inputValue">
+<select name="actionType" id="" [(ngModel)]="actionType">
+    <option value="increment">increment</option>
+    <option value="decrement">decrement</option>
+</select>
+<button (click)="onincrement()">submit</button>
+<h1>endloading</h1>
+<button (click)="endloading()">Endloading</button>

@@ -7,3 +7,7 @@ export class MasterService {
 
   constructor() { }
 }
+ export let Data={
+  loading:false,
+  endloading:true
+}
