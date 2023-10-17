@@ -1,4 +1,4 @@
-import { increment,decrement, reset } from "./counter.actions";
+import { increment,decrement, reset, customeincrement } from "./counter.actions";
 import { initialSate } from "./counter.state";
 
 import { createReducer, on } from "@ngrx/store";
@@ -10,7 +10,11 @@ on(decrement,(state)=>{
     }),
     on(reset,(state)=>{
         return {...state,counter:0}
-        })
+        }),
+        on(customeincrement,(state)=>{
+            return {...state,counter:state.counter}
+            }),
+
 
 
 

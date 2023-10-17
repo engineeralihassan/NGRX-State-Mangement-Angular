@@ -7,12 +7,14 @@ import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './shared/stor/counter.reducers';
 import { CounterbuttonComponent } from './components/counterbutton/counterbutton.component';
 import { CounterdispalyComponent } from './components/counterdispaly/counterdispaly.component';
+import { CustomcounterComponent } from './customcounter/customcounter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterbuttonComponent,
-    CounterdispalyComponent
+    CounterdispalyComponent,
+    CustomcounterComponent
   ],
   imports: [
     BrowserModule,
